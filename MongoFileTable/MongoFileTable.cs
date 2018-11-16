@@ -15,7 +15,7 @@ namespace MongoFileTable
         string mongoDBName = "FILE";
         IMongoDatabase mongoDB;// = mongoClient.GetDatabase(mongoDBName);
         IMongoCollection<MongoFile> fileCollection;// = mongoDB.GetCollection<MongoFile>("file");
-        MongoClient mongoClient = new MongoClient("mongodb://webimviewer:Qwer1234@webimviewertestcluster-shard-00-00-vfvrr.mongodb.net:27017,webimviewertestcluster-shard-00-01-vfvrr.mongodb.net:27017,webimviewertestcluster-shard-00-02-vfvrr.mongodb.net:27017/test?ssl=true&replicaSet=WeBIMViewerTestCluster-shard-0&authSource=admin&retryWrites=true");
+        MongoClient mongoClient = new MongoClient("");
 
         static private MongoFileTable _currentTable = new MongoFileTable();
         public MongoFileTable() { throw new NotImplementedException(); }
