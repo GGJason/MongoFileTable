@@ -11,7 +11,7 @@ namespace MongoFileTable
         {
             //var fileTable = MongoFileTable.Instance;
             //fileTable.Start();
-            var fileTable = new FileTable("");
+            var fileTable = new MongoFileTable("");
             fileTable.Start();
             Console.ReadLine();
         }

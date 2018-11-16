@@ -9,6 +9,7 @@ namespace MongoFileTable
     public class MongoFile
     {
         public ObjectId _id = new ObjectId();
+        public Guid PublicId = new Guid();
         public string Name;
         public string SystemName;
         public DateTime CreatedAt;
